@@ -11,7 +11,6 @@ exports.getTransaction = (req, res, next) => {
     ]
   })
     .then(transactions => {
-      console.log(transactions[0].account);
       res.render('transaction', {
         transactions: transactions,
         pageTitle: "Account View",

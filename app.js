@@ -25,7 +25,8 @@ Account.hasMany(Transaction);
 sequelize
   .sync()
   .then(result => {
-    app.listen(3000);
+    const port = process.env.PORT || 3000;
+    app.listen(port);
   })
   .catch(err => {
     console.log(err);
