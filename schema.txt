@@ -1,0 +1,21 @@
+Schema:
+
+Table: Accounts
+id: integer
+accountNumber: integer
+accountName: String
+accountType: Savings/Current
+balanceDate: Date
+currency: String
+openingAvailableBalance: integer
+
+Table: Transactions
+id: integer
+accountNumber: integer
+accountName: String 
+valueDate: Date
+currency:
+debitAmount: Integer
+creditAmount: Integer
+debitCredit: Debit/Credit
+transactionNarrative: String
