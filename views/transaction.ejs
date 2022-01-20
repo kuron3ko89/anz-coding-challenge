@@ -24,8 +24,8 @@
     <tbody>
       <% for (let transaction of transactions) { %>
       <tr>
-          <th scope="row" class="account__number"><%= transaction.accountNumber %></th>
-          <td class="account__name"><%= transaction.accountName %></td>
+          <th scope="row" class="account__number" style="font-weight: normal;"><%= transaction.account.accountNumber %></th>
+          <td class="account__name"><%= transaction.account.accountName %></td>
           <td class="transaction__valueDate"><%= transaction.valueDate %></td>
           <td class="account_currency"><%= transaction.currency %></td>
           <td class="account_debitAmount" style="color:#f6515f;"><% if (transaction.debitAmount !== null) { %><%= transaction.debitAmount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') %><% } %></td>
