@@ -2,9 +2,9 @@ const Sequelize = require('sequelize');
 
 // require('dotenv').config();
 
- const sequelize = new Sequelize('mysql', process.env.RDS_USERNAME, process.env.RDS_PASSWORD, {
-    host: process.env.RDS_HOSTNAME,
-    port: process.env.RDS_PORT,
+ const sequelize = new Sequelize('mysql', 'admin', 'Cybermew1!', {
+    host: 'aa1bx8edifnzb9x.cqwk4h8lorda.us-east-1.rds.amazonaws.com',
+    port: 3306,
     logging: console.log,
     maxConcurrentQueries: 100,
     dialect: 'mysql',
