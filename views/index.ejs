@@ -27,7 +27,7 @@
           <td class="account__type"><%= account.accountType %></td>
           <td class="account_balanceDate"><%= account.balanceDate %></td>
           <td class="account_currency"><%= account.currency %></td>
-          <td class="account_openingAvailableBalance" style="color:rgb(112, 246, 112);"><%= account.openingAvailableBalance.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') %></td>
+          <td class="account_openingAvailableBalance" style="color:rgb(112, 246, 112); text-align: right;"><%= account.openingAvailableBalance.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') %></td>
         </tr>
         <% } %>  
     </tbody>

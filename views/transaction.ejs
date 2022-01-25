@@ -28,8 +28,8 @@
           <td class="account__name"><%= transaction.account.accountName %></td>
           <td class="transaction__valueDate"><%= transaction.valueDate %></td>
           <td class="account_currency"><%= transaction.account.currency %></td>
-          <td class="account_debitAmount" style="color:#f6515f;"><% if (transaction.debitAmount !== null) { %><%= transaction.debitAmount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') %><% } %></td>
-          <td class="account_creditAmount" style="color:#70f670;"><% if (transaction.creditAmount !== null) { %><%= transaction.creditAmount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') %><% } %></td>
+          <td class="account_debitAmount" style="color:#f6515f; text-align: right;"><% if (transaction.debitAmount !== null) { %><%= transaction.debitAmount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') %><% } %></td>
+          <td class="account_creditAmount" style="color:#70f670; text-align: right;"><% if (transaction.creditAmount !== null) { %><%= transaction.creditAmount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') %><% } %></td>
           <td class="account_debitCredit"><%= transaction.debitCredit %></td>
           <td class="transaction__Narrative"><%= transaction.transactionNarrative %></td>
         </tr>
