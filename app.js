@@ -1,3 +1,5 @@
+const path = require('path');
+
 const express = require('express');
 const bodyParser = require('body-parser');
 
@@ -15,6 +17,8 @@ const accountRoutes = require('./routes/account');
 const transactionRoutes = require('./routes/transaction');
 
 app.use(bodyParser.urlencoded({ extended: false }));
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(accountRoutes);
 app.use(transactionRoutes);
